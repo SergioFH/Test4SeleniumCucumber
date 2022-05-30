@@ -26,12 +26,11 @@ public class Test extends TestBase{
 
     @When("^Realiza una busqueda de software testing y hace click en el buscador$")
     public void realizaUnaBusquedaDeSoftwareTestingYHaceClickEnElBuscador() throws Throwable {
-
+        articlePage.pageSoftwareTesting();
     }
 
     @Then("^Se debe redirigir a la pantalla de software testing$")
     public void seDebeRedirigirALaPantallaDeSoftwareTesting() throws Throwable {
-        articlePage.pageSoftwareTesting();
         Assert.assertTrue("No se redirecciono correctamente",softwareTestingPage.isTitleDisplayed());
     }
 
