@@ -24,7 +24,7 @@ public class BasePage {
         try {
             return driver.findElement(element).isDisplayed();
         }catch (Exception e){
-            throw new Exception("The element " + element + " is not visible in the DOM");
+            throw new Exception("The element " + element + " is not visible");
         }
     }
 
